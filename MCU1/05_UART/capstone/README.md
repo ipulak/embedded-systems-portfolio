@@ -1,28 +1,11 @@
-# UART Capstone — Interrupt-Driven Diagnostic Console
+# UART Command Console Capstone
 
-**Status:** Next major project.
+The final bare-metal UART project for this module.
 
-Build a bare-metal UART diagnostic console on STM32F407. Start with polling TX/RX, then move to interrupt-driven reception, a ring buffer, command parsing, and finally DMA where appropriate.
+Target: NUCLEO-F446RE / STM32F446RETx.
 
-## Example commands
-```text
-help
-led on
-led off
-pattern 2
-timer status
-version
-```
+The implementation uses USART2 with polling TX, interrupt-driven RX, a
+single-producer/single-consumer ring buffer, and a foreground command parser.
+Build from the parent `05_UART` directory with `make`.
 
-## Key concepts
-- USART register programming
-- baud-rate configuration
-- TXE / TC / RXNE
-- GPIO alternate function
-- UART interrupts and NVIC
-- ring buffer / producer-consumer design
-- command parser
-- UART + DMA extension
-
-## Acceptance
-The console must receive commands without polling the UART continuously and must remain responsive while LED/timer functions execute.
+For the full design rationale, see `../docs/ARCHITECTURE.md`.

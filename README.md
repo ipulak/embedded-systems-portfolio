@@ -1,10 +1,17 @@
-# STM32 GPIO Driver Lab
+# STM32 Bare-Metal Firmware Portfolio
 
-A hands-on bare-metal STM32 GPIO learning and debugging laboratory developed using the STM32F407VGT6 MCU and STM32F4DISCOVERY board.
+A structured, register-level STM32 firmware portfolio. The repository begins
+with GPIO development on STM32F407VGT6 / STM32F4DISCOVERY and now organizes
+each peripheral as a dedicated MCU1 module with its own exercises and
+capstone.
 
-This repository focuses on understanding GPIO at the register level rather than relying on STM32 HAL APIs.
+The code intentionally avoids STM32 HAL in application logic so that clock
+control, GPIO configuration, interrupt routing, and peripheral state remain
+visible in the implementation.
 
-The projects progressively cover GPIO output, GPIO input, switch debouncing, register-level bit manipulation, fault injection, and debugger-based root-cause analysis.
+The completed UART module is available under `MCU1/05_UART`. It progresses
+from polling TX through modular drivers, blocking RX/TX, interrupt-driven
+receive, and a NUCLEO-F446RE command-console capstone.
 
 ---
 
