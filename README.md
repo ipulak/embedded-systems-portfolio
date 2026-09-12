@@ -74,7 +74,7 @@ The objective is to understand:
 # Repository Structure
 
 ```text
-stm32-gpio-driver-lab/
+stm32-bare-metal-firmware/
 |
 ├── README.md
 |
