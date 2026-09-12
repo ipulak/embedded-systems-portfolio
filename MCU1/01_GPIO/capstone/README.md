@@ -2,6 +2,9 @@
 
 This directory contains the complete progression of the MCU1 GPIO work.
 
+See the [GPIO module guide](../README.md) for hardware, build instructions,
+register explanations, experiments, and recorded results.
+
 ## Projects
 
 1. `gpio_01_led_baremetal` — bare-metal GPIO output and LED control
