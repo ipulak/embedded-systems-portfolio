@@ -14,7 +14,7 @@ Register-level STM32 drivers, independent learning projects, and peripheral inte
 - [Hardware Timers](hardware-timers)
 - [SysTick and software timers](systick)
 - [GPIO](gpio)
-- [EXTI and NVIC](exti-nvic) — planning notes.
+- [EXTI and NVIC](exti-nvic) — button interrupt project and capstone plan.
 - [Cortex-M](cortex-m) — planning notes.
 - [Embedded system design](system-design) — planning notes.
 
@@ -22,8 +22,9 @@ Register-level STM32 drivers, independent learning projects, and peripheral inte
 
 See the [capstone index](capstone/README.md) for existing projects and planned integrations. Peripheral capstones remain beside their exercises to preserve their build layouts.
 
-## Newly imported projects
+## Imported projects
 
+- `exti-nvic/exti_01_button_interrupt/`
 - `adc/adc_01_polling/`
 - `adc/02_adc_interrupt/`
 - `hardware-timers/07_timer/`
