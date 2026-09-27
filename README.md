@@ -1,4 +1,4 @@
-# STM32 and Embedded Linux Firmware Portfolio
+# Embedded Systems Portfolio
 
 An embedded C learning portfolio progressing from STM32 register-level drivers to RTOS applications, board bring-up, bootloaders, Linux drivers, and Yocto BSP work.
 
@@ -6,37 +6,36 @@ An embedded C learning portfolio progressing from STM32 register-level drivers t
 
 ```text
 stm32-bare-metal-firmware/
-└── MCU1/
-    ├── 01-stm32-baremetal-platform/
-    │   ├── adc/
-    │   ├── dma/
-    │   ├── uart/
-    │   ├── spi/
-    │   ├── i2c/
-    │   ├── Hardware Timers/
-    │   ├── systick/
-    │   ├── gpio/
-    │   ├── exti-nvic/
-    │   ├── cortex-m/
-    │   ├── system-design/
-    │   └── capstone/
-    ├── 02-freertos-telemetry-system/
-    │   └── capstone/
-    ├── 03-zephyr-platform/
-    │   └── capstone/
-    ├── 04-stm32-board-bringup/
-    │   └── capstone/
-    ├── 05-stm32-bootloader/
-    │   └── capstone/
-    ├── 06-embedded-linux-bringup/
-    │   └── capstone/
-    ├── 07-linux-device-driver/
-    │   └── capstone/
-    └── 08-mini-bsp-yocto/
-        └── capstone/
+├── 01-stm32-baremetal-platform/
+│   ├── adc/
+│   ├── dma/
+│   ├── uart/
+│   ├── spi/
+│   ├── i2c/
+│   ├── hardware-timers/
+│   ├── systick/
+│   ├── gpio/
+│   ├── exti-nvic/
+│   ├── cortex-m/
+│   ├── system-design/
+│   └── capstone/
+├── 02-freertos-telemetry-system/
+│   └── capstone/
+├── 03-zephyr-platform/
+│   └── capstone/
+├── 04-stm32-board-bringup/
+│   └── capstone/
+├── 05-stm32-bootloader/
+│   └── capstone/
+├── 06-embedded-linux-bringup/
+│   └── capstone/
+├── 07-linux-device-driver/
+│   └── capstone/
+└── 08-mini-bsp-yocto/
+    └── capstone/
 ```
 
-Start with the [MCU1 learning path](MCU1/README.md) or the [bare-metal platform](MCU1/01-stm32-baremetal-platform/README.md). Every numbered section has a capstone directory. Existing peripheral capstones are indexed from the platform capstone guide.
+Start with the [Portfolio learning path](LEARNING_PATH.md) or the [bare-metal platform](01-stm32-baremetal-platform/README.md). Every numbered section has a capstone directory. Existing peripheral capstones are indexed from the platform capstone guide.
 
 ## Current implementation
 
@@ -54,12 +53,12 @@ Import individual directories containing `.project` into STM32CubeIDE. Projects 
 For the UART capstone, with Make and the Arm GNU toolchain installed:
 
 ```sh
-cd MCU1/01-stm32-baremetal-platform/uart
+cd 01-stm32-baremetal-platform/uart
 make list
 make
 ```
 
-See the [UART guide](MCU1/01-stm32-baremetal-platform/uart/README.md) for exercise selection and flashing instructions.
+See the [UART guide](01-stm32-baremetal-platform/uart/README.md) for exercise selection and flashing instructions.
 
 ## Hardware and validation
 

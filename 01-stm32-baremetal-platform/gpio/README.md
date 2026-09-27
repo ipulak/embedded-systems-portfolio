@@ -1,6 +1,6 @@
 # GPIO — Register-Level Drivers and Hardware Debugging
 
-[Firmware portfolio](../../../README.md) · [MCU1 module index](../../README.md)
+[Firmware portfolio](../../README.md) · [Portfolio learning path](../../LEARNING_PATH.md)
 
 This module collects the GPIO learning projects for STM32F407VGT6 on
 STM32F4DISCOVERY: LED output, fault injection, button input, blocking

@@ -1,8 +1,8 @@
-# Linux Device Driver
+# Zephyr Platform
 
-[MCU1 learning path](../README.md)
+[Portfolio learning path](../LEARNING_PATH.md)
 
-Kernel modules, device interfaces, interrupts, and driver validation.
+Board configuration, devicetree, drivers, and a Zephyr application.
 
 **Status:** Planned; this section is a scaffold, not a completed implementation.
 

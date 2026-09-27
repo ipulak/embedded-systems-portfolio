@@ -1,8 +1,8 @@
-# Mini BSP with Yocto
+# Linux Device Driver
 
-[MCU1 learning path](../README.md)
+[Portfolio learning path](../LEARNING_PATH.md)
 
-A board-support layer, image recipes, and reproducible image builds.
+Kernel modules, device interfaces, interrupts, and driver validation.
 
 **Status:** Planned; this section is a scaffold, not a completed implementation.
 

@@ -1,8 +1,8 @@
-# Zephyr Platform
+# Mini BSP with Yocto
 
-[MCU1 learning path](../README.md)
+[Portfolio learning path](../LEARNING_PATH.md)
 
-Board configuration, devicetree, drivers, and a Zephyr application.
+A board-support layer, image recipes, and reproducible image builds.
 
 **Status:** Planned; this section is a scaffold, not a completed implementation.
 

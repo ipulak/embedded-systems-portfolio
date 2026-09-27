@@ -1,6 +1,6 @@
 # STM32 Bootloader
 
-[MCU1 learning path](../README.md)
+[Portfolio learning path](../LEARNING_PATH.md)
 
 Image layout, application handoff, firmware updates, and recovery.
 

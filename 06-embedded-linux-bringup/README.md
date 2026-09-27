@@ -1,8 +1,8 @@
-# FreeRTOS Telemetry System
+# Embedded Linux Bring-Up
 
-[MCU1 learning path](../README.md)
+[Portfolio learning path](../LEARNING_PATH.md)
 
-Task-based acquisition, telemetry, diagnostics, and synchronization.
+Boot chain, kernel, devicetree, root filesystem, and board validation.
 
 **Status:** Planned; this section is a scaffold, not a completed implementation.
 

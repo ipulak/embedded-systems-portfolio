@@ -1,6 +1,6 @@
-# MCU1 — Embedded Systems Portfolio
+# Embedded Systems Learning Path
 
-[Repository overview](../README.md)
+[Repository overview](README.md)
 
 Eight ordered sections, from register-level STM32 firmware to a Linux BSP. Every section has a `capstone/` directory. Numbering describes learning order, not completion.
 

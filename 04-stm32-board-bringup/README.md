@@ -1,6 +1,6 @@
 # STM32 Board Bring-Up
 
-[MCU1 learning path](../README.md)
+[Portfolio learning path](../LEARNING_PATH.md)
 
 Power, clocks, reset, SWD, memory, and peripheral validation.
 

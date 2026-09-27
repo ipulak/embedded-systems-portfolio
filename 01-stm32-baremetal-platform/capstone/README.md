@@ -9,7 +9,7 @@
 - [UART](../uart/capstone/README.md)
 - [SPI](../spi/capstone/README.md)
 - [I2C](../i2c/capstone/README.md)
-- [Hardware Timers](../Hardware%20Timers/capstone/README.md)
+- [Hardware Timers](../hardware-timers/capstone/README.md)
 - [SysTick and software timers](../systick/capstone/README.md)
 - [GPIO](../gpio/capstone/README.md)
 - [EXTI and NVIC](../exti-nvic/capstone/README.md)
