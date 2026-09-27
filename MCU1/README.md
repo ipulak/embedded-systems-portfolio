@@ -1,88 +1,22 @@
-# MCU1 — STM32 Bare-Metal Embedded Firmware Portfolio
+# MCU1 — Embedded Systems Portfolio
 
-[Back to the firmware portfolio](../README.md)
+[Repository overview](../README.md)
 
-This directory organizes the MCU1 learning path across STM32F407 and
-STM32F446RE projects. Topics are at different stages of consolidation;
-numbered folders describe the curriculum, not a completion checklist.
+Eight ordered sections, from register-level STM32 firmware to a Linux BSP. Every section has a `capstone/` directory. Numbering describes learning order, not completion.
 
-## Included work
+## Learning path
 
-- [GPIO](01_GPIO/README.md): source projects and detailed hardware-debugging
-  notes, with the existing stage collection under `capstone/`.
-- [Timers and SysTick](03_SysTick_SoftwareTimers/README.md): six source
-  snapshots and design notes; full standalone build projects are not yet
-  included in these timer folders.
-- [UART](05_UART/README.md): four exercises, a NUCLEO-F446RE command-console
-  capstone, a Makefile, and [architecture notes](05_UART/docs/ARCHITECTURE.md).
+1. [STM32 Bare-Metal Platform](01-stm32-baremetal-platform/README.md) — Register-level drivers and peripheral integration.
+2. [FreeRTOS Telemetry System](02-freertos-telemetry-system/README.md) — Task-based acquisition, telemetry, diagnostics, and synchronization.
+3. [Zephyr Platform](03-zephyr-platform/README.md) — Board configuration, devicetree, drivers, and a Zephyr application.
+4. [STM32 Board Bring-Up](04-stm32-board-bringup/README.md) — Power, clocks, reset, SWD, memory, and peripheral validation.
+5. [STM32 Bootloader](05-stm32-bootloader/README.md) — Image layout, application handoff, firmware updates, and recovery.
+6. [Embedded Linux Bring-Up](06-embedded-linux-bringup/README.md) — Boot chain, kernel, devicetree, root filesystem, and board validation.
+7. [Linux Device Driver](07-linux-device-driver/README.md) — Kernel modules, device interfaces, interrupts, and driver validation.
+8. [Mini BSP with Yocto](08-mini-bsp-yocto/README.md) — A board-support layer, image recipes, and reproducible image builds.
 
-## Planned or not yet consolidated
+The bare-metal section contains existing firmware and five imported ADC/timer projects. The FreeRTOS section preserves the earlier RTOS capstone plan. Sections 03–08 are scaffolds; implementations and hardware validation remain to be added.
 
-These folders currently contain planning documentation, not standalone
-firmware implementations:
+## Importing existing projects
 
-- [EXTI and NVIC](02_EXTI_NVIC/capstone/README.md)
-- [Hardware timer capstone](04_HardwareTimers/capstone/README.md)
-- [SPI](06_SPI/capstone/README.md)
-- [I2C](07_I2C/capstone/README.md)
-- [ADC](08_ADC/capstone/README.md)
-- [DMA](09_DMA/capstone/README.md)
-- [Cortex-M](10_Cortex_M/capstone/README.md)
-- [RTOS](11_RTOS/capstone/README.md)
-- [Embedded system design](12_Embedded_System_Design/capstone/README.md)
-
-TIM2 polling and interrupt examples already live in the timers/SysTick
-module; the separate hardware-timer capstone remains a planning document.
-
-## Structure
-
-```text
-MCU1/
-├── 01_GPIO/
-├── 02_EXTI_NVIC/
-├── 03_SysTick_SoftwareTimers/
-├── 04_HardwareTimers/
-├── 05_UART/
-├── 06_SPI/
-├── 07_I2C/
-├── 08_ADC/
-├── 09_DMA/
-├── 10_Cortex_M/
-├── 11_RTOS/
-└── 12_Embedded_System_Design/
-```
-
-## Topic convention
-
-The intended shape for new standalone capstones is:
-
-```text
-<topic>/capstone/
-├── README.md
-├── Inc/
-├── Src/
-├── Startup/          (when required)
-├── docs/
-└── tests/            (when practical)
-```
-
-UART uses `<topic>/exercises/` for its learning sequence and `capstone/`
-for its final application. GPIO retains its existing stage collection under
-`capstone/`; timer snapshots retain their `timer_01_*` through `timer_06_*`
-directories. Consult the module README for the actual layout.
-
-Add implementation and validation notes as each topic is consolidated.
-Generated build output (`Debug/`, `.elf`, `.o`, `.d`, `.map`, etc.) should
-not be committed.
-
-## Hardware targets
-
-- Most existing MCU1 topics target STM32F407VGT6 on STM32F4DISCOVERY.
-- The UART capstone targets STM32F446RETx on NUCLEO-F446RE.
-- All projects use ARM Cortex-M4 and register-level, bare-metal C.
-- STM32CubeIDE is the primary IDE; project-specific build instructions live
-  beside the corresponding source.
-
-## Learning flow
-
-GPIO → EXTI/NVIC → SysTick/software timers → hardware timers → UART → SPI/I2C → ADC → DMA → Cortex-M → RTOS → system design.
+Import each directory containing `.project` into STM32CubeIDE. Re-import projects from their new paths if your workspace referenced the old locations. Existing peripheral capstones remain with their modules; the bare-metal capstone index links to all of them.

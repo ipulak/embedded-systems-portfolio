@@ -18,3 +18,8 @@
 
 # macOS
 .DS_Store
+
+# Local build artifacts
+**/build/
+*.o
+*.d
