@@ -1,50 +1,21 @@
-# SysTick & Software Timers — MCU1
+# SysTick and Software Timing
 
-This directory contains the complete progression developed on the STM32F407 Discovery board.
+[Platform overview](../README.md)
 
-## Projects
+This folder contains Cortex-M SysTick examples. STM32 TIM2 peripheral projects live separately in [hardware-timers](../hardware-timers/README.md).
 
-| Stage | Project | Main concept |
-|---|---|---|
-| 01 | `timer_01_basic` | TIM2 free-running counter |
-| 02 | `timer_02_polling` | Timer status polling |
-| 03 | `timer_03_interrupt` | TIM2 update interrupt + NVIC |
-| 04 | `timer_04_systick` | Cortex-M SysTick |
-| 05 | `timer_05_systick_1ms` | 1 ms system time base |
-| 06 | `timer_06_capstone` | Software timer framework |
+## Source snapshots
 
-## Learning progression
+- [timer_04_systick](timer_04_systick/README.md): configure SysTick and increment a tick counter in its handler.
+- [timer_05_systick_1ms](timer_05_systick_1ms/README.md): use a 1 ms SysTick counter for a blocking millisecond delay and LED toggling.
 
-```text
-TIM2 counter
-   ↓
-Polling
-   ↓
-TIM2 interrupt
-   ↓
-SysTick
-   ↓
-1 ms system tick
-   ↓
-Software timers
-   ↓
-Button debounce + LED pattern + state-machine application
-```
+These are source snapshots, not complete standalone CubeIDE projects. Supply the matching register header, startup code, and linker configuration before building. Original stage numbers are retained.
 
-## Timer calculations
-For the TIM2 projects:
+## Capstones
 
-`Timer counter frequency = Timer clock / (PSC + 1)`
+- [SysTick-only software scheduler plan](capstone/README.md): planned non-blocking LED patterns and button debounce.
+- [Combined TIM2 + SysTick example](../capstone/timer_06_capstone/README.md): the existing mixed-peripheral snapshot is now under the platform capstone folder.
 
-With a 16 MHz timer clock and `PSC = 15`:
+## Distinction
 
-`16 MHz / 16 = 1 MHz` → 1 us per counter tick.
-
-With `ARR = 999`, the update period is:
-
-`(999 + 1) × 1 us = 1 ms`.
-
-## Key interview distinction
-TIM2 is a general-purpose hardware peripheral timer. SysTick is part of the Cortex-M core and is commonly used as a system time base. Software timers can then be layered above the regular tick.
-
-See `tim2_interrupt_architecture.md` for the interrupt architecture notes.
+SysTick is the Cortex-M core timer. TIM2 is an STM32 peripheral timer with its own clock and interrupt configuration. Software timing can be built on a tick counter; using such a counter does not by itself make a delay non-blocking.

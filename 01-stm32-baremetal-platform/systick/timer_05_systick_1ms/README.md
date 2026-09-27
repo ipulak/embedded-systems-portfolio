@@ -1,20 +1,12 @@
 # Timer 05 — SysTick 1 ms Time Base
 
-## Objective
-Build a deterministic 1 ms system time base using Cortex-M SysTick and use that tick for software timing.
+[SysTick overview](../README.md)
 
-## Concepts
-- 1 ms SysTick configuration
-- Millisecond counter
-- Software timer expiry
-- Periodic versus one-shot timing
-- Separating time-base generation from application logic
+Configure a 1 ms Cortex-M SysTick time base and increment a volatile tick counter in `SysTick_Handler()`. The foreground code uses the counter for a blocking millisecond delay and LED toggling.
 
-## Architecture
-SysTick ISR → 1 ms tick → software timers → application events.
+This demonstrates a tick-based delay; it does not yet implement a non-blocking software-timer service. It is a source snapshot rather than a standalone build project.
 
-## Why it matters
-The CPU is interrupted only once per millisecond; application code can check timer state without busy-waiting for every delay.
+## Next steps
 
-## Next stage
-`timer_06_capstone` combines the time base, software timers, button debounce and LED-pattern state-machine behavior.
+- [Planned non-blocking SysTick scheduler](../capstone/README.md).
+- [Combined TIM2 + SysTick capstone](../../capstone/timer_06_capstone/README.md).

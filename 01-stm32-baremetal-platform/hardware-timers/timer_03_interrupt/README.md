@@ -18,4 +18,4 @@ TIM2 counts independently → update event sets UIF → NVIC services the interr
 This demonstrates the fundamental embedded pattern of replacing CPU polling with event-driven interrupt processing.
 
 ## Next stage
-`timer_04_systick` introduces Cortex-M SysTick as a separate system time base.
+[timer_04_systick](../../systick/timer_04_systick/README.md) introduces Cortex-M SysTick as a separate system time base.

@@ -15,7 +15,7 @@
 - [EXTI and NVIC](../exti-nvic/capstone/README.md)
 - [Cortex-M](../cortex-m/capstone/README.md)
 - [Embedded system design](../system-design/capstone/README.md)
-- [Software-timer implementation](../systick/timer_06_capstone/README.md)
+- [Combined TIM2 + SysTick source snapshot](timer_06_capstone/README.md)
 
 Each linked guide records whether it contains firmware or only a plan.
 
