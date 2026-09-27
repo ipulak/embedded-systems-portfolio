@@ -5,7 +5,7 @@ An embedded C learning portfolio progressing from STM32 register-level drivers t
 ## Repository structure
 
 ```text
-stm32-bare-metal-firmware/
+embedded-systems-portfolio/
 ├── 01-stm32-baremetal-platform/
 │   ├── adc/
 │   ├── dma/
@@ -44,8 +44,8 @@ The bare-metal section includes GPIO projects, timer/SysTick source snapshots, U
 ## Getting started
 
 ```sh
-git clone https://github.com/ipulak/stm32-bare-metal-firmware.git
-cd stm32-bare-metal-firmware
+git clone https://github.com/ipulak/embedded-systems-portfolio.git
+cd embedded-systems-portfolio
 ```
 
 Import individual directories containing `.project` into STM32CubeIDE. Projects moved from the former numbered peripheral folders must be re-imported at their new locations. There is no repository-wide firmware build.
