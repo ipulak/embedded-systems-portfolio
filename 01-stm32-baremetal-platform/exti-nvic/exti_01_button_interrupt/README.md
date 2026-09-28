@@ -133,5 +133,3 @@ The folder includes headers, source, startup assembly, flash/RAM linker scripts,
 - Exercise all four modes and compare the outputs with the documented red-LED limitation.
 - Leave the application in a static mode, then switch back to animation and observe retained timer phase/expiry.
 - Test rapid button activity and delayed foreground servicing to characterize event coalescing.
-
-This description was checked against the source. It does not claim a new firmware build, timing measurement, or hardware validation. The README update does not change application behavior.
