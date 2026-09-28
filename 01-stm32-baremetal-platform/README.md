@@ -14,7 +14,7 @@ Register-level STM32 drivers, independent learning projects, and peripheral inte
 - [Hardware Timers](hardware-timers)
 - [SysTick and software timers](systick)
 - [GPIO](gpio)
-- [EXTI and NVIC](exti-nvic) — button interrupt projects for STM32F407 and NUCLEO-F446RE, plus a capstone plan.
+- [EXTI and NVIC](exti-nvic) — button interrupt projects for STM32F407 and NUCLEO-F446RE, a USART2 receive interrupt LED exercise, and a capstone plan.
 - [Cortex-M](cortex-m) — planning notes.
 - [Embedded system design](system-design) — planning notes.
 
@@ -26,6 +26,7 @@ See the [capstone index](capstone/README.md) for existing projects and planned i
 
 - `exti-nvic/exti_01_button_interrupt/`
 - `exti-nvic/exti_02_pc13_button_uart/`
+- `exti-nvic/002_uart_rx_interrupt_led/`
 - `adc/adc_01_polling/`
 - `adc/02_adc_interrupt/`
 - `hardware-timers/07_timer/`
