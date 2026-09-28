@@ -10,7 +10,7 @@
 
 ## UART interrupt exercise
 
-- [002_uart_rx_interrupt_led](002_uart_rx_interrupt_led/README.md): NUCLEO-F446RE USART2 receive interrupt, protected command handoff, PA5 LED control and serial acknowledgements. Uses the NVIC directly; no GPIO EXTI input is involved.
+- [exti_03_uart_rx_interrupt_led](exti_03_uart_rx_interrupt_led/README.md): NUCLEO-F446RE USART2 receive interrupt, protected command handoff, PA5 LED control and serial acknowledgements. Uses the NVIC directly; no GPIO EXTI input is involved.
 
 ## Capstone
 

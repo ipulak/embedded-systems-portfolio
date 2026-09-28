@@ -26,7 +26,7 @@ See the [capstone index](capstone/README.md) for existing projects and planned i
 
 - `exti-nvic/exti_01_button_interrupt/`
 - `exti-nvic/exti_02_pc13_button_uart/`
-- `exti-nvic/002_uart_rx_interrupt_led/`
+- `exti-nvic/exti_03_uart_rx_interrupt_led/`
 - `adc/adc_01_polling/`
 - `adc/02_adc_interrupt/`
 - `hardware-timers/07_timer/`

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>002_uart_rx_interrupt_led</name>
+	<name>exti_03_uart_rx_interrupt_led</name>
 	<comment></comment>
 	<projects>
 	</projects>

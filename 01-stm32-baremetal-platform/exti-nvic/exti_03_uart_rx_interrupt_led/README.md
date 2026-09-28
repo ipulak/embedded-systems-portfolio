@@ -79,7 +79,7 @@ The busy-polling main loop takes one pending command at a time, sets or clears P
 ## Source layout
 
 ```text
-002_uart_rx_interrupt_led/
+exti_03_uart_rx_interrupt_led/
 ├── Inc/
 │   ├── stm32f446xx_reg.h       # Memory-mapped register definitions
 │   ├── gpio.h                 # GPIO interface and pin definitions
@@ -96,16 +96,16 @@ The busy-polling main loop takes one pending command at a time, sets or clears P
 ├── STM32F446RETX_RAM.ld       # Alternative linker script; not the default build
 ├── .project
 ├── .cproject
-└── 002_uart_rx_interrupt_led.launch
+└── exti_03_uart_rx_interrupt_led.launch
 ```
 
 ## Build and run
 
 1. Clone or download the repository.
 2. In STM32CubeIDE, select **File → Import → General → Existing Projects into Workspace** and select this project directory.
-3. Confirm the project is `002_uart_rx_interrupt_led`, targets STM32F446RE, and uses the included F446 startup and flash linker script.
+3. Confirm the project is `exti_03_uart_rx_interrupt_led`, targets STM32F446RE, and uses the included F446 startup and flash linker script.
 4. Select **Project → Clean**, then build the Debug configuration. CubeIDE generates the build files and output directory.
-5. Connect the Nucleo through its ST-LINK USB connector. Flash/debug using `002_uart_rx_interrupt_led.launch`, then resume execution if the debugger stops at `main()`.
+5. Connect the Nucleo through its ST-LINK USB connector. Flash/debug using `exti_03_uart_rx_interrupt_led.launch`, then resume execution if the debugger stops at `main()`.
 6. Open the ST-LINK serial port at 115200 8N1 with no flow control. Reset the board after opening the terminal to see the startup message.
 7. Send `1` and `0` individually. Some terminals transmit only after Enter; the additional CR/LF characters are ignored.
 
