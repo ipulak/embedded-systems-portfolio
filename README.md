@@ -39,7 +39,7 @@ Start with the [Portfolio learning path](LEARNING_PATH.md) or the [bare-metal pl
 
 ## Current implementation
 
-The bare-metal section includes GPIO projects, timer/SysTick source snapshots, UART exercises and a command-console capstone, plus two ADC and three hardware-timer CubeIDE projects. Several peripheral integrations are still plans. FreeRTOS preserves the earlier RTOS plan, and sections 03–08 are scaffolds. Folder presence does not indicate completion.
+The bare-metal section includes GPIO and EXTI button projects, timer/SysTick source snapshots, UART exercises and a command-console capstone, plus two ADC and three hardware-timer CubeIDE projects. Several peripheral integrations are still plans. FreeRTOS preserves the earlier RTOS plan, and sections 03–08 are scaffolds. Folder presence does not indicate completion.
 
 ## Getting started
 
